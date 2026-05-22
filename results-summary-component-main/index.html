@@ -5,35 +5,79 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
       <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <title>Frontend Mentor | Results summary component</title>
     </head>
     <body>
         <div class="container">
-          <div class="left-side-card">
-            <p>Your Result</p>
-            <div class="circle">
-              <p>76</p>
-              <p>of 100</p>
-            </div>
-            <p class="strong-paragraph">Great</p>
-              <p>You scored higher than 65% of the people who have taken these tests.</p>
-          </div>
-              
-              <div class="right-side-card">
-                <p>Summary</p>
-               <div class="reaction-card">
-                <img src="assets/images/icon-reaction.svg" alt="Reaction">
-                <p>Reaction</p>
+            <div class="parent">
+                <div class="left-side-card">
+                  <div class="left-side-items">
+                    <div>
+                      <h3 style="font-weight: 700; color:rgba(255, 255, 255, 0.666); font-weight: 700;">Your Result</h3>
+                    </div>
+                    <div class="circle">
+                      <span class="result" style="color:white">76</span>
+                      <span>of 100</span>
+                    </div>
+                    <div class="lower-div">
+                      <h1 style="color: rgb(255, 255, 255); font-size: 26px;">Great</h1>
+                      <p>You scored higher than 65% 
+                        of <br> the people who have taken <br> these tests.</p>
+                    </div>
+                  </div>
                 </div>
+                <div class="right-side-card">
+                  <div class="right-side-items">
+                    <div class="heading"><h2 style="color: rgba(0, 0, 0, 0.741); font-size: 20px; font-weight: bold;">Summary</h2></div>    
+                    <div class="reaction-container">
+                      <div class="left-items">
+                        <img src="assets/images/icon-reaction.svg" alt="">
+                        <span>Reaction</span>
+                      </div>
+                      <div class="right-items">
+                        <p>80<span class="outof">/100</span></p>
+                      </div>
+                    </div>
+                      <div class="memory-container">
+                      <div class="left-items">
+                        <img src="assets/images/icon-memory.svg" alt="">
+                        <span>Memory</span>
+                      </div>
+                      <div class="right-items">
+                        <p>92<span class="outof">/100</span></p>
+                      </div>
+                    </div>
+                      <div class="verbal-container">
+                      <div class="left-items">
+                        <img src="assets/images/icon-verbal.svg" alt="">
+                        <span>Verbal</span>
+                      </div>
+                      <div class="right-items">
+                        <p>61<span class="outof">/100</span></p>
+                      </div>
+                    </div>
+                     <div class="visual-container">
+                      <div class="left-items">
+                        <img src="assets/images/icon-visual.svg" alt="">
+                        <span>Visual</span>
+                      </div>
+                      <div class="right-items">
+                        <p>72 <span class="outof">/100</span></p>
+                      </div>
+                    </div>
                 
-              </div>
+                      <button class="btn" style="font-size: 16px;">Continue</button>
+                    
+                  </div>
+                </div>
 
             </div>
 
-            </div>
+        </div>
 
-            </div>
-          </div>
               <!-- 
               76
               of 100
@@ -56,6 +100,6 @@
               72 / 100
 
               Continue -->
-        </div>
+        
     </body>
   </html>
