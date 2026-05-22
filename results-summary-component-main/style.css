@@ -82,12 +82,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(14, 14, 146, 0.116);
+    /* background-color: rgba(14, 14, 146, 0.116); */
     width: 170px;
     height: 170px;
     border-radius: 50%;
     color: rgba(14, 14, 146, 0.116);
-    filter: blur();
+    background:linear-gradient(to bottom,#3629ca,rgb(0, 0, 255));
+    
 }
 .right-side-items{
     display: flex;
@@ -151,7 +152,7 @@
     text-align: left;
 }
 .result{
-    font-size: 70px;
+    font-size: 62px;
     color: white;
     font-weight: 800;
 }
